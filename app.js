@@ -5,15 +5,15 @@ var myApp = angular.module('myApp', ['ngRoute']);
 myApp.config(function ($routeProvider) {
 	$routeProvider
 		.when('/', {
-			templateUrl: './pages/main.html',
+			templateUrl: './pages/dashboard.html',
 			controller: 'mainController'
 		})
-		.when('/second', {
-			templateUrl: './pages/second.html',
+		.when('/decks', {
+			templateUrl: './pages/decks.html',
 			controller: 'secondController'
 		})
-		.when('/second/:deck', {
-			templateUrl: './pages/second.html',
+		.when('/decks/:deck', {
+			templateUrl: './pages/decks.html',
 			controller: 'secondController'
 		});
 });

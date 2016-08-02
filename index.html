@@ -3,19 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Flashcard App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 
-	<nav>
-		<ul>
+	<nav class="navbar navbar-default">
+		<ul class="nav navbar-nav">
 			<li>
 				<a href="#/">Home</a>
-				<a href="#/second">Second</a>
+			</li>
+			<li>
+				<a href="#/decks">My Decks</a>
 			</li>
 		</ul>
 	</nav>
 
-	<div ng-view></div>
+	<div class="container-fluid">
+		<div ng-view></div>
+	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script src="angular-route.min.js"></script>
