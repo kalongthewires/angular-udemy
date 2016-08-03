@@ -4,7 +4,7 @@
   "description": "",
   "main": "angular.min.js",
   "scripts": {
-    "start": "http-server . -p 3030 -o -c-1",
+    "start": "http-server . -p 3030 -o -c-1 | sass --watch sass:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
