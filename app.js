@@ -36,10 +36,14 @@ myApp.controller('mainController', ['$scope', function ($scope) {
 myApp.controller('secondController', ['$scope', '$routeParams', function ($scope, $routeParams) {
 	'use strict';
 
-	$scope.deck = {
+	$scope.decks = [{
 		name: 'Test Deck',
 		description: 'This is a deck!'
-	};
+	},
+	{
+		name: 'Another Deck',
+		description: 'This is a deck!'
+	}];
 }]);
 
 myApp.directive('deck', function () {
